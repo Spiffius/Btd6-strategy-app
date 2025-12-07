@@ -229,10 +229,3 @@ with tab2:
 
 st.markdown("---")
 st.caption("Updated for Version 52 (Frontier Legends).")
-
-The video below explains why the **Gwen + Tack Shooters** combo is so easy to execute and powerful, making it a great low-micro option.
-
-[5 Overpowered Strategies in BTD6 for Free CHIMPS Wins!](https://www.youtube.com/watch?v=gyrWQOnu2Pk)
-http://googleusercontent.com/youtube_content/2 *YouTube video views will be stored in your YouTube History, and your data will be stored and used by YouTube according to its [Terms of Service](https://www.youtube.com/static?template=terms)*
-
-

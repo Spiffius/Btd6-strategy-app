@@ -5,37 +5,90 @@ import pandas as pd
 # 1. DATABASE (The "Brain" of the App)
 # ==========================================
 
-# MAPS DATABASE (Updated for v52)
+# MAPS DATABASE (Expanded to 60 Maps - FINAL LIST)
 maps_db = [
-    # BEGINNER
-    {"name": "Monkey Meadow", "difficulty": "Beginner", "features": ["Standard"]},
+    # BEGINNER MAPS (21)
+    {"name": "Monkey Meadow", "difficulty": "Beginner", "features": ["Standard", "Long"]},
     {"name": "Logs", "difficulty": "Beginner", "features": ["Standard", "Long"]},
+    {"name": "Tree Stump", "difficulty": "Beginner", "features": ["Standard"]},
+    {"name": "Town Center", "difficulty": "Beginner", "features": ["Standard"]},
     {"name": "Resort", "difficulty": "Beginner", "features": ["Standard", "Loop"]},
+    {"name": "Skates", "difficulty": "Beginner", "features": ["Standard", "Loop"]},
+    {"name": "Scoop", "difficulty": "Beginner", "features": ["Standard"]},
+    {"name": "Alpine Run", "difficulty": "Beginner", "features": ["Standard"]},
+    {"name": "Frozen Over", "difficulty": "Beginner", "features": ["Ice/Obstacle"]},
     {"name": "Cubism", "difficulty": "Beginner", "features": ["Water", "Standard"]},
+    {"name": "Four Circles", "difficulty": "Beginner", "features": ["Standard"]},
+    {"name": "Hedge", "difficulty": "Beginner", "features": ["Obstacle", "Short"]},
+    {"name": "End of the Road", "difficulty": "Beginner", "features": ["Standard"]},
+    {"name": "Water Park", "difficulty": "Beginner", "features": ["Water", "Moving"]},
+    {"name": "Polyphemus", "difficulty": "Beginner", "features": ["LOS"]},
+    {"name": "Covered Gardens", "difficulty": "Beginner", "features": ["Obstacle"]},
+    {"name": "Quarry", "difficulty": "Beginner", "features": ["LOS", "Button"]},
+    {"name": "Quiet Street", "difficulty": "Beginner", "features": ["Standard"]},
+    {"name": "Bloonarius Prime", "difficulty": "Beginner", "features": ["Standard"]},
     {"name": "Lotus Island", "difficulty": "Beginner", "features": ["Water", "Stun"]},
-    
-    # INTERMEDIATE
-    {"name": "Quiet Street", "difficulty": "Intermediate", "features": ["Standard"]},
+    {"name": "KingoftheSea", "difficulty": "Beginner", "features": ["Water"]},
+
+    # INTERMEDIATE MAPS (17)
+    {"name": "In The Loop", "difficulty": "Intermediate", "features": ["Loop"]},
+    {"name": "Middle of the Road", "difficulty": "Intermediate", "features": ["Standard"]},
+    {"name": "One Two Tree", "difficulty": "Intermediate", "features": ["Standard"]},
+    {"name": "Scrapyard", "difficulty": "Intermediate", "features": ["Obstacle"]},
+    {"name": "The Cabin", "difficulty": "Intermediate", "features": ["Obstacle"]},
+    {"name": "Encrypted", "difficulty": "Intermediate", "features": ["Obstacle", "Graveyard"]},
+    {"name": "Bazaar", "difficulty": "Intermediate", "features": ["Standard"]},
+    {"name": "Adora's Temple", "difficulty": "Intermediate", "features": ["Standard"]},
+    {"name": "Spring Spring", "difficulty": "Intermediate", "features": ["Water", "Standard"]},
+    {"name": "KartsNDarts", "difficulty": "Intermediate", "features": ["Obstacles", "Moving"]},
+    {"name": "Moon Landing", "difficulty": "Intermediate", "features": ["Standard", "Gimmick"]},
+    {"name": "Haunted", "difficulty": "Intermediate", "features": ["LOS", "Gimmick"]},
+    {"name": "Downstream", "difficulty": "Intermediate", "features": ["Water", "Standard"]},
+    {"name": "Firing Range", "difficulty": "Intermediate", "features": ["LOS", "Standard"]},
+    {"name": "Cracked", "difficulty": "Intermediate", "features": ["Multi", "Standard"]},
+    {"name": "Streambed", "difficulty": "Intermediate", "features": ["Water", "Split Path"]},
     {"name": "Spice Islands", "difficulty": "Intermediate", "features": ["Water", "Limited Land"]},
-    {"name": "KartsNDarts", "difficulty": "Intermediate", "features": ["Obstacles"]},
-    {"name": "Balance", "difficulty": "Intermediate", "features": ["Centralized"]},
-    {"name": "Encrypted", "difficulty": "Intermediate", "features": ["Obstacles", "Graveyard"]},
 
-    # ADVANCED
-    {"name": "Cornfield", "difficulty": "Advanced", "features": ["Obstacles", "No Water"]},
-    {"name": "Off The Coast", "difficulty": "Advanced", "features": ["Water", "Standard"]},
-    {"name": "Another Brick", "difficulty": "Advanced", "features": ["Split Path"]},
+    # ADVANCED MAPS (13)
+    {"name": "Chutes", "difficulty": "Advanced", "features": ["LOS", "Standard"]},
+    {"name": "Rake", "difficulty": "Advanced", "features": ["Standard"]},
+    {"name": "Dark Path", "difficulty": "Advanced", "features": ["LOS", "Short"]},
+    {"name": "Erosion", "difficulty": "Advanced", "features": ["Water", "Gimmick"]},
+    {"name": "Midnight Mansion", "difficulty": "Advanced", "features": ["LOS", "Gimmick"]},
     {"name": "Sunken Columns", "difficulty": "Advanced", "features": ["Water", "LOS"]},
+    {"name": "X Factor", "difficulty": "Advanced", "features": ["Multi", "LOS"]},
+    {"name": "Mesa", "difficulty": "Advanced", "features": ["Multi", "Short"]},
+    {"name": "Geared", "difficulty": "Advanced", "features": ["Gimmick", "Rotating"]},
+    {"name": "Spillway", "difficulty": "Advanced", "features": ["Water", "Gimmick"]},
+    {"name": "Cargo", "difficulty": "Advanced", "features": ["Water", "Gimmick"]},
+    {"name": "Pat's Pond", "difficulty": "Advanced", "features": ["Water", "LOS"]},
+    {"name": "Peninsula", "difficulty": "Advanced", "features": ["Water", "Limited Land"]},
 
-    # EXPERT
-    {"name": "Dark Castle", "difficulty": "Expert", "features": ["Multi", "Water"]},
+    # EXPERT MAPS (9)
+    {"name": "High Finance", "difficulty": "Expert", "features": ["Short", "Gimmick"]},
+    {"name": "Another Brick", "difficulty": "Expert", "features": ["Split Path", "Standard"]},
+    {"name": "Off The Coast", "difficulty": "Expert", "features": ["Water", "Standard"]},
+    {"name": "Cornfield", "difficulty": "Expert", "features": ["Obstacles", "No Water"]},
+    {"name": "Underground", "difficulty": "Expert", "features": ["Multi", "Gimmick"]},
+    {"name": "Glacial Trail", "difficulty": "Expert", "features": ["Standard"]},
+    {"name": "Dark Dungeons", "difficulty": "Expert", "features": ["LOS", "Short"]},
     {"name": "Sanctuary", "difficulty": "Expert", "features": ["Multi", "Moving"]},
-    {"name": "Flooded Valley", "difficulty": "Expert", "features": ["Water", "Flood"]},
-    {"name": "Bloody Puddles", "difficulty": "Expert", "features": ["Multi", "Short", "Water"]},
+    {"name": "Ravine", "difficulty": "Expert", "features": ["Standard", "Gimmick"]},
+
+    # EXTREME MAPS (The true hardest ones - 9)
+    {"name": "Flooded Valley", "difficulty": "Expert", "features": ["Water", "Flood", "Gimmick"]},
+    {"name": "Infernal", "difficulty": "Expert", "features": ["LOS", "Multi"]},
+    {"name": "Bloody Puddles", "difficulty": "Expert", "features": ["Multi", "Short", "Water", "Limited Land"]},
+    {"name": "Workshop", "difficulty": "Expert", "features": ["Multi", "Gimmick"]},
+    {"name": "Quad", "difficulty": "Expert", "features": ["Multi", "LOS", "Short"]},
+    {"name": "Dark Castle", "difficulty": "Expert", "features": ["Multi", "Water", "Short"]},
+    {"name": "Muddy Puddles", "difficulty": "Expert", "features": ["Multi", "Water", "LOS"]},
+    {"name": "Ouch", "difficulty": "Expert", "features": ["Multi", "LOS", "Short"]},
+    {"name": "Blons", "difficulty": "Expert", "features": ["Short", "Gimmick"]},
     {"name": "Tricky Tracks", "difficulty": "Expert", "features": ["New", "Short", "No LOS"]},
 ]
 
-# STRATEGY DATABASE (Updated with Low-Micro Focus)
+# STRATEGY DATABASE (No change to strats, keeping low-micro focus)
 strategies_db = [
     # --- ORIGINAL LOW-MICRO SET ---
     {
@@ -229,3 +282,8 @@ with tab2:
 
 st.markdown("---")
 st.caption("Updated for Version 52 (Frontier Legends).")
+
+It can be difficult to assess the actual difficulty of maps, so you can check out this video that discusses how players subjectively categorize maps by difficulty: [Difficulty of BTD6 Maps](https://www.youtube.com/watch?v=Zhj3Ib3KDX4).
+http://googleusercontent.com/youtube_content/3 *YouTube video views will be stored in your YouTube History, and your data will be stored and used by YouTube according to its [Terms of Service](https://www.youtube.com/static?template=terms)*
+
+

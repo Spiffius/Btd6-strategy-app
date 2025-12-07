@@ -5,7 +5,7 @@ import pandas as pd
 # 1. DATABASE (The "Brain" of the App)
 # ==========================================
 
-# MAPS DATABASE (Expanded to 60 Maps - FINAL LIST)
+# MAPS DATABASE (Expanded to all maps through v52 - FINAL LIST)
 maps_db = [
     # BEGINNER MAPS (21)
     {"name": "Monkey Meadow", "difficulty": "Beginner", "features": ["Standard", "Long"]},
@@ -30,7 +30,7 @@ maps_db = [
     {"name": "Lotus Island", "difficulty": "Beginner", "features": ["Water", "Stun"]},
     {"name": "KingoftheSea", "difficulty": "Beginner", "features": ["Water"]},
 
-    # INTERMEDIATE MAPS (17)
+    # INTERMEDIATE MAPS (19) - ADDED: LOST CREVASSE, LUMINOUS COVE
     {"name": "In The Loop", "difficulty": "Intermediate", "features": ["Loop"]},
     {"name": "Middle of the Road", "difficulty": "Intermediate", "features": ["Standard"]},
     {"name": "One Two Tree", "difficulty": "Intermediate", "features": ["Standard"]},
@@ -48,8 +48,10 @@ maps_db = [
     {"name": "Cracked", "difficulty": "Intermediate", "features": ["Multi", "Standard"]},
     {"name": "Streambed", "difficulty": "Intermediate", "features": ["Water", "Split Path"]},
     {"name": "Spice Islands", "difficulty": "Intermediate", "features": ["Water", "Limited Land"]},
-
-    # ADVANCED MAPS (13)
+    {"name": "Lost Crevasse", "difficulty": "Intermediate", "features": ["Gimmick", "Split Path", "LOS"]},
+    {"name": "Luminous Cove", "difficulty": "Intermediate", "features": ["Water", "Gimmick"]},
+    
+    # ADVANCED MAPS (14) - ADDED: TINKERTON
     {"name": "Chutes", "difficulty": "Advanced", "features": ["LOS", "Standard"]},
     {"name": "Rake", "difficulty": "Advanced", "features": ["Standard"]},
     {"name": "Dark Path", "difficulty": "Advanced", "features": ["LOS", "Short"]},
@@ -63,8 +65,9 @@ maps_db = [
     {"name": "Cargo", "difficulty": "Advanced", "features": ["Water", "Gimmick"]},
     {"name": "Pat's Pond", "difficulty": "Advanced", "features": ["Water", "LOS"]},
     {"name": "Peninsula", "difficulty": "Advanced", "features": ["Water", "Limited Land"]},
+    {"name": "Tinkerton", "difficulty": "Advanced", "features": ["Gimmick", "Obstacle"]},
 
-    # EXPERT MAPS (9)
+    # EXPERT MAPS (10) - ADDED: TRICKY TRACKS
     {"name": "High Finance", "difficulty": "Expert", "features": ["Short", "Gimmick"]},
     {"name": "Another Brick", "difficulty": "Expert", "features": ["Split Path", "Standard"]},
     {"name": "Off The Coast", "difficulty": "Expert", "features": ["Water", "Standard"]},
@@ -74,6 +77,7 @@ maps_db = [
     {"name": "Dark Dungeons", "difficulty": "Expert", "features": ["LOS", "Short"]},
     {"name": "Sanctuary", "difficulty": "Expert", "features": ["Multi", "Moving"]},
     {"name": "Ravine", "difficulty": "Expert", "features": ["Standard", "Gimmick"]},
+    {"name": "Tricky Tracks", "difficulty": "Expert", "features": ["New", "Short", "No LOS"]},
 
     # EXTREME MAPS (The true hardest ones - 9)
     {"name": "Flooded Valley", "difficulty": "Expert", "features": ["Water", "Flood", "Gimmick"]},
@@ -85,7 +89,6 @@ maps_db = [
     {"name": "Muddy Puddles", "difficulty": "Expert", "features": ["Multi", "Water", "LOS"]},
     {"name": "Ouch", "difficulty": "Expert", "features": ["Multi", "LOS", "Short"]},
     {"name": "Blons", "difficulty": "Expert", "features": ["Short", "Gimmick"]},
-    {"name": "Tricky Tracks", "difficulty": "Expert", "features": ["New", "Short", "No LOS"]},
 ]
 
 # STRATEGY DATABASE (No change to strats, keeping low-micro focus)
